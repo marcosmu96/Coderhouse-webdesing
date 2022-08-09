@@ -27,10 +27,10 @@ header {
 header div {
 
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15% 75%;
     text-align: start;
     align-items: center;
-    margin-right: 600px;
+
 }
 
 header nav {
@@ -63,100 +63,6 @@ header nav a {
     text-decoration: none;
     padding-right: 20px;
 }
-
-
-
-
-
-
-
-@media only screen and (max-width: 420px) {
-
-    header {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: center;
-        background: rgb(5, 5, 5);
-        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(73, 73, 73) 51%, rgba(0, 0, 0, 1) 100%);
-
-
-    }
-
-    header div {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        text-align: center;
-        align-items: center;
-        margin-right: 0px;
-    }
-
-
-
-    header nav {
-        display: none;
-        grid-template-columns: 100%;
-        align-items: center;
-        text-align: center;
-        margin: 0px;
-
-
-    }
-
-    .desplegar {
-        display: grid;
-        transition: ease-in-out 0.3s;
-    }
-
-
-
-    header div img {
-
-        width: 70px;
-        margin: auto;
-        padding: 0px;
-        margin-top: 20px;
-        margin-bottom: 0px;
-
-    }
-
-
-    header div a {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-        text-decoration: none;
-    }
-
-    header nav {
-
-        margin-bottom: 20px;
-    }
-
-    header nav a {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-        text-decoration: none;
-        padding-right: 0px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 20px;
-    }
-
-    header nav a:hover {
-        font-size: 22px;
-        box-shadow: 0px 0px 20px #666;
-        transition: ease-in-out 0.3s;
-    }
-
-}
-
-
-
-
-
 
 
 
@@ -288,148 +194,6 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 }
 
 
-
-@media only screen and (max-width: 420px) {
-
-    .slides {
-        background: rgb(0, 0, 0) url("https://codepen.io/images/classy_fabric.png");
-        padding: 0;
-        width: 100%;
-        height: 420px;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .slides * {
-        user-select: none;
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-    }
-
-    .slides input {
-        display: none;
-    }
-
-    .slide-container {
-        display: flex;
-    }
-
-    .slide {
-        top: 0;
-        opacity: 0;
-        width: 100%;
-        height: 420px;
-        display: flex;
-
-        position: absolute;
-        justify-content: center;
-
-        transform: scale(0);
-
-        transition: all .7s ease-in-out;
-    }
-
-    .slide img {
-
-        width: 100%;
-
-    }
-
-    .nav label {
-        width: 200px;
-        height: 100%;
-        display: none;
-        position: absolute;
-
-        opacity: 0;
-        z-index: 9;
-        cursor: pointer;
-
-        transition: opacity .2s;
-
-        color: #FFF;
-        font-size: 116pt;
-        text-align: center;
-        line-height: 380px;
-        font-family: "Varela Round", sans-serif;
-        background-color: rgba(11, 11, 11, 0.3);
-        text-shadow: 0px 0px 15px rgb(12, 12, 12);
-    }
-
-    .slide:hover+.nav label {
-        opacity: 0.5;
-    }
-
-    .nav label:hover {
-        opacity: 1;
-    }
-
-    .nav .next {
-        right: 0;
-    }
-
-    input:checked+.slide-container .slide {
-        opacity: 1;
-
-        transform: scale(1);
-
-        transition: opacity 1s ease-in-out;
-    }
-
-    input:checked+.slide-container .nav label {
-        display: block;
-    }
-
-    .nav-dots {
-        width: 100%;
-        bottom: 9px;
-        height: 11px;
-        display: block;
-        position: absolute;
-        text-align: center;
-    }
-
-    .nav-dots .nav-dot {
-        top: -5px;
-        width: 11px;
-        height: 11px;
-        margin: 0 4px;
-        position: relative;
-        border-radius: 100%;
-        display: inline-block;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .nav-dots .nav-dot:hover {
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    input#img-1:checked~.nav-dots label#img-dot-1,
-    input#img-2:checked~.nav-dots label#img-dot-2,
-    input#img-3:checked~.nav-dots label#img-dot-3,
-    input#img-4:checked~.nav-dots label#img-dot-4,
-    input#img-5:checked~.nav-dots label#img-dot-5,
-    input#img-6:checked~.nav-dots label#img-dot-6 {
-        background: rgba(0, 0, 0, 0.8);
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
 .meta {
     display: flex;
     margin-top: 20px;
@@ -462,52 +226,6 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 
 
 
-@media only screen and (max-width: 420px) {
-    .meta {
-        width: 100%;
-        display: flex;
-        margin-top: 0px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .meta div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .meta div h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-        font-family: 'Roboto Condensed', sans-serif;
-
-    }
-
-
-    .meta div img {
-        width: 90%;
-        margin-top: 20px;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
 .principal-torneo {
     display: flex;
     flex-direction: row;
@@ -526,13 +244,14 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
     text-align: center;
 }
 
-.toplayer div  {
+.toplayer div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .toplayer div a {
@@ -542,7 +261,8 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
     text-align: center;
     color: white;
     text-align: center;
-    margin: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
     font-size: 40px;
@@ -553,8 +273,8 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 
 
 .toplayer div a:hover {
- box-shadow: 0px 0px 20px #666;
- transition: ease-in-out 0.2s;
+    box-shadow: 0px 0px 20px #666;
+    transition: ease-in-out 0.2s;
 }
 
 .toplayer div a img {
@@ -564,29 +284,10 @@ input#img-6:checked~.nav-dots label#img-dot-6 {
 }
 
 .toplayer div a .twitch {
-margin-left: 10px;
+    margin-left: 10px;
     width: 40px;
     border-radius: none;
 }
-
-
-@media only screen and (max-width: 420px) {
-
-    .principal-torneo {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        vertical-align: top;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    
-    }
-    
-    
-
-}
-
 
 
 
@@ -700,104 +401,6 @@ margin-left: 10px;
 
 
 
-@media only screen and (max-width: 420px) {
-
-
-    .calendar {
-        position: relative;
-        background-color: rgb(194, 194, 194);
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border: 5px solid rgb(79, 79, 79);
-        border-radius: 5px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-    }
-    
-    .calendar .date {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-    
-    .calendar .date h3 {
-        margin: 0 0 20px;
-        padding: 0;
-        font-size: 24px;
-        font-weight: 500;
-        text-align: center;
-        user-select: none;
-        text-transform: capitalize;
-    }
-    
-    .calendar .date .days {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 12px;
-    }
-    
-    .calendar .date .days .number.active {
-        background-color: #362b48;
-        color: #fff;
-        cursor: pointer;
-        border-radius: 50%;
-    }
-    
-    .calendar .date .days .day,
-    .calendar .date .days .number {
-        width: 48px;
-        height: 48px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        user-select: none;
-    }
-    
-    .calendar .date .days .day:first-child,
-    .calendar .date .days .number:nth-child(7n+1) {
-        color: #f44336;
-        font-weight: 600;
-    }
-    
-    .calendar .img {
-        position: relative;
-        top: 0;
-        right: 0;
-        width: 400px;
-        height: 100%;
-        background-color: #000;
-        user-select: none;
-    }
-    
-    .calendar .img img {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
 
     width: 100%;
@@ -897,121 +500,6 @@ h4 {
 
 
 
-
-@media only screen and (max-width: 420px) {
-
-
-
-
-    footer {
-
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: rgb(5, 5, 5);
-        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(73, 73, 73) 51%, rgba(0, 0, 0, 1) 100%);
-        margin-bottom: 0;
-    }
-    
-    
-    footer section {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    footer section .visitanos {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    
-    footer section .contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0px;
-        justify-content: flex-start;
-    }
-    
-    footer section .contacto .contactos3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-    
-    
-    
-    footer section .contacto .contactos2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 4%;
-        margin-right: 4%;
-    
-    
-    }
-    
-    
-    footer section .visitanos div {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    footer section .visitanos div img {
-        padding: 8%;
-    }
-    
-    
-    .contacto p,
-    h4 {
-        color: white;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    
-    .visitanos p,
-    h4 {
-        color: white;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    
-    
-    .copyright {
-        margin: 0;
-        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(125, 125, 125) 51%, rgba(0, 0, 0, 1) 100%);
-        display: block;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .copyright p {
-        margin: 0;
-        color: white;
-        font-family: 'Roboto Condensed', sans-serif;
-        padding: 20px;
-        text-align: center;
-    }
-
-
-
-}
-
-
-
-
-
-
-
 .clases {
     display: flex;
     flex-direction: row;
@@ -1050,66 +538,6 @@ h4 {
     font-size: 20px;
     font-weight: 400;
 }
-
-
-
-@media only screen and (max-width: 420px)  {
-
-
-
-
-    .clases {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-        font-size: 20px;
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .clases li {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-        font-size: 25px;
-        font-weight: 700;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        list-style: none;
-    
-        margin: 20px;
-    }
-    
-    .clases ol {
-        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(125, 125, 125) 51%, rgba(0, 0, 0, 1) 100%);
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-        font-size: 20px;
-        font-weight: 400;
-    }
-    
-    
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1194,95 +622,9 @@ h4 {
 
 
 
-
-@media only screen and (max-width: 420px) {
-
-    .sectionform {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    
-    .contactoform {
-        margin-top: 20px;
-        margin-bottom: 50px;
-        width: 95%;
-        padding: 0px;
-        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(125, 125, 125) 51%, rgba(0, 0, 0, 1) 100%);
-        border: 5px solid rgb(92, 92, 92);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .contactoform label {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: white;
-        font-size: 20px;
-        margin-top: 20px;
-        font-weight: 500;
-    }
-    
-    .contactoform input {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        width: 90%;
-        border-radius: 10px;
-        margin: 10px;
-        padding: 10px;
-    }
-    
-    .contactoform textarea {
-        font-family: 'Roboto Condensed', sans-serif;
-        color: rgb(0, 0, 0);
-        font-size: 20px;
-        width: 90%;
-        height: 250px;
-        border-radius: 10px;
-        margin: 10px;
-    }
-    
-    .contactoform .button {
-        padding: 15px;
-        font-size: 15px;
-        background-color: rgb(99, 99, 99);
-        color: white;
-        border: 3px solid rgb(186, 185, 185);
-    
-    }
-    
-    
-    .contactoform .button:hover {
-        font-family: 'Roboto Condensed', sans-serif;
-        padding: 16px;
-        font-size: 18px;
-        background-color: rgb(99, 99, 99);
-        color: white;
-        border: 3px solid rgb(186, 185, 185);
-        box-shadow: 0px 0px 20px rgb(174, 174, 174);
-        transition: all 0.3s;
-    }
-    
-    
-
-
-}
-
-
-
-
-
-
-
 .gana {
     display: flex;
-    margin-top: 20px;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1330,7 +672,446 @@ h4 {
 }
 
 
-@media only screen and (max-width: 420px) {
+
+.menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+
+        grid-template-columns: 60% 35%;
+
+    }
+
+    header div {
+
+        grid-template-columns: 20% 90%;
+
+
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 980px) {
+
+    header {
+
+        grid-template-columns: 60% 40%;
+
+    }
+
+    .toplayer div {
+
+        flex-direction: column;
+
+    }
+
+    .gana div {
+        flex-direction: column;
+        margin: 0px;
+    }
+
+
+    .gana a {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .calendario {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+       
+    }
+
+    .calendar {
+        width: 80%;
+        height: max-content;
+        flex-direction: column;
+
+    }
+
+    .calendar .img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        grid-template-columns: 100%;
+        justify-content: center;
+
+    }
+
+    header div {
+        width: 100%;
+        grid-template-columns: 100%;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+
+
+    header nav {
+        display: none;
+        grid-template-columns: 100%;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 20px;
+
+    }
+
+    .desplegar {
+        display: grid;
+        transition: ease-in-out 0.3s;
+    }
+
+
+
+    header div img {
+
+        width: 70px;
+        margin: auto;
+        padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+    }
+
+    header nav a {
+        padding-right: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+
+    header nav a:hover {
+        font-size: 22px;
+        box-shadow: 0px 0px 20px #666;
+        transition: ease-in-out 0.3s;
+    }
+
+
+
+
+    .slide img {
+
+        width: 100%;
+
+    }
+
+    .nav label {
+        font-size: 116pt;
+    }
+
+
+
+
+    .meta {
+        width: 100%;
+        margin-top: 0px;
+
+    }
+
+    .meta div {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .meta div h2 {
+        text-align: center;
+
+    }
+
+
+    .meta div img {
+        width: 90%;
+        margin-top: 20px;
+
+    }
+
+
+
+    .principal-torneo {
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+
+
+    .toplayer h3 {
+        margin: 10px;
+    }
+
+    .toplayer div {
+        flex-direction: column;
+
+    }
+
+    .toplayer div a {
+        font-size: 30px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+    .toplayer div a img {
+        width: 80px;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+
+    .toplayer div a .twitch {
+        width: 30px;
+
+    }
+
+    
+
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    footer section .visitanos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    footer section .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+
+    footer section .contacto .contactos3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+
+
+    footer section .contacto .contactos2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4%;
+        margin-right: 4%;
+
+
+    }
+
+
+    footer section .visitanos div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer section .visitanos div img {
+        padding: 8%;
+    }
+
+
+    .contacto p,
+    h4 {
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .visitanos p,
+    h4 {
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+
+    .copyright {
+        margin: 0;
+        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(125, 125, 125) 51%, rgba(0, 0, 0, 1) 100%);
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+
+    .copyright p {
+        margin: 0;
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+
+    .clases {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        font-size: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .clases li {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+
+        margin: 20px;
+    }
+
+    .clases ol {
+        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(125, 125, 125) 51%, rgba(0, 0, 0, 1) 100%);
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .sectionform {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contactoform {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 95%;
+        padding: 0px;
+        background: linear-gradient(90deg, rgba(5, 5, 5, 1) 0%, rgb(125, 125, 125) 51%, rgba(0, 0, 0, 1) 100%);
+        border: 5px solid rgb(92, 92, 92);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactoform label {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+    .contactoform input {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 90%;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .contactoform textarea {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 90%;
+        height: 250px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .contactoform .button {
+        padding: 15px;
+        font-size: 15px;
+        background-color: rgb(99, 99, 99);
+        color: white;
+        border: 3px solid rgb(186, 185, 185);
+
+    }
+
+
+    .contactoform .button:hover {
+        font-family: 'Roboto Condensed', sans-serif;
+        padding: 16px;
+        font-size: 18px;
+        background-color: rgb(99, 99, 99);
+        color: white;
+        border: 3px solid rgb(186, 185, 185);
+        box-shadow: 0px 0px 20px rgb(174, 174, 174);
+        transition: all 0.3s;
+    }
+
+
+    .slides {
+      
+        height: 320px;
+    
+    }
+
+    .slide {
+        height: 320px;
+    }
+
+    .slide img {
+        height: 320px;
+    }
+
+
 
     .gana {
         display: flex;
@@ -1390,19 +1171,6 @@ h4 {
     }
 
 
-}
-
-
-
-.menu {
-    display: none;
-}
-
-
-
-
-@media only screen and (max-width: 420px) {
-
 
     .menu {
         width: 100%;
@@ -1428,73 +1196,131 @@ h4 {
         transition: all 250ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
     }
 
+
     .menu-line:first-child {
         animation: firstLinetoClose 240ms cubic-bezier(0.23, 0.95, 0.58, 1.37);
-    }
-
-    .open .menu-line:first-child {
+      }
+      
+      .open .menu-line:first-child {
         animation: firstLinetoOpen 240ms cubic-bezier(0.23, 0.95, 0.58, 1.37);
         animation-fill-mode: forwards;
-    }
-
-    @keyframes firstLinetoOpen {
-        0% {
-            transform: translateY(0);
+      }
+      
+      @keyframes firstLinetoOpen {
+        0%   {
+          transform: translateY(0);
         }
-
-        50% {
-            transform: translateY(12px);
+      
+        50% { 
+          transform: translateY(12px);
         }
-
+      
         100% {
-            transform: translateY(17px) rotate(45deg);
+          transform: translateY(17px) rotate(45deg);
         }
-    }
-
-    @keyframes firstLinetoClose {
-        0% {
-            transform: translateY(17px) rotate(0);
+      }
+      
+      @keyframes firstLinetoClose {
+        0%   {
+          transform: translateY(17px) rotate(0);
         }
-
+      
         100% {
-            transform: translateY(0);
+          transform: translateY(0);
         }
-    }
-
-    .open .menu-line:nth-child(2) {
+      }
+      
+      .open .menu-line:nth-child(2){
         opacity: 0;
-    }
-
-    .menu-line:last-child {
-        animation: lastLinetoClose 240ms cubic-bezier(0.23, 0.95, 0.58, 1.37);
-    }
-
-    .open .menu-line:last-child {
+      }
+      
+      .menu-line:last-child {
+        animation: lastLinetoClose 240ms cubic-bezier(0.23, 0.95, 0.58, 1.37);  
+      }
+      
+      .open .menu-line:last-child {
         animation: lastLinetoOpen 240ms cubic-bezier(0.23, 0.95, 0.58, 1.37);
         animation-fill-mode: forwards;
-    }
-
-    @keyframes lastLinetoOpen {
-        0% {
-            transform: translateY(0);
+      }
+      
+      @keyframes lastLinetoOpen {
+        0%   {
+          transform: translateY(0);
         }
-
+      
         50% {
-            transform: translateY(-12px);
+          transform: translateY(-12px);
         }
-
+      
         100% {
-            transform: translateY(-17px) rotate(-45deg);
+          transform: translateY(-17px) rotate(-45deg);
         }
-    }
-
-    @keyframes lastLinetoClose {
-        0% {
-            transform: translateY(-17px);
+      }
+      
+      @keyframes lastLinetoClose {
+        0%   {
+          transform: translateY(-17px);
         }
-
+      
         100% {
-            transform: translateY(0);
+          transform: translateY(0);
         }
+      }
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.calendario {
+    width: 100%;
+}
+
+    .calendar {
+        width: 95%;
+        height: auto;
+        flex-direction: column;
+        border: 5px solid rgb(79, 79, 79);
     }
+    
+    .calendar .date {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .calendar .date .days {
+        font-size: 12px;
+    }
+    
+    .calendar .date .days .number.active {
+        background-color: #362b48;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    
+    .calendar .date .days .day,
+    .calendar .date .days .number {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+    }
+    
+    
+    
+    .calendar .img img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+
+
 }
