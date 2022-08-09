@@ -677,6 +677,17 @@ h4 {
     display: none;
 }
 
+
+
+
+@media only screen and (max-width: 1400px) {
+    .clases {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     header {
 
@@ -745,6 +756,17 @@ h4 {
 
 }
 
+@media only screen and (max-width: 900px) {
+    .clases {
+    display: flex;
+    flex-direction: column;
+
+    }
+
+    .clases ol img {
+        width: 100%;
+    }
+}
 
 
 
