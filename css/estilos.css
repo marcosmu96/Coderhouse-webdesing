@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 * {
-  cursor: url(./cursor.png), auto; }
+  cursor: url(../img/cursor.png), auto; }
 
 html {
   margin: 0;
@@ -11,14 +11,14 @@ body {
   padding: 0;
   background-color: black;
   height: 100%;
-  font-family: "Roboto Condensed", sans-serif !important; }
+  font-family: "Roboto Condensed", sans-serif; }
 
 a {
   font-size: 18px;
-  cursor: url(./arma.png), auto !important; }
+  cursor: url(../img/arma.png), auto; }
 
 a:hover {
-  color: white !important; }
+  color: white; }
 
 header {
   padding: 0;
@@ -58,7 +58,7 @@ header {
   header div img {
     width: 80%;
     align-items: center;
-    padding-right: 10px; }
+    padding-left: 20px; }
   header div a {
     color: white;
     text-decoration: none; }
@@ -155,10 +155,10 @@ header {
 
 .meta {
   display: flex;
-  margin-top: 20px;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column; }
   .meta div {
     display: flex;
     justify-content: center;
@@ -190,15 +190,15 @@ header {
 
 .toplayer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center; }
   .toplayer div {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px; }
@@ -208,7 +208,6 @@ header {
       align-items: center;
       text-align: center;
       color: white;
-      text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
       text-decoration: none;
@@ -245,9 +244,9 @@ header {
 
 .calendario {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 150px; }
   .calendario h3 {
     color: white;
@@ -323,6 +322,25 @@ header {
       height: 100%;
       object-fit: cover; }
 
+.videoguia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .videoguia h2 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: white; }
+  .videoguia iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px #666;
+    width: 600px;
+    height: 300px; }
+
 footer {
   width: 100%;
   display: flex;
@@ -334,18 +352,21 @@ footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin-top: 10px; }
     footer section .visitanos {
       display: flex;
       flex-direction: column;
       justify-content: flex-end; }
       footer section .visitanos div {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        justify-content: center; }
+        flex-direction: row; }
         footer section .visitanos div img {
           padding-right: 20px; }
+        footer section .visitanos div h3 {
+          color: white; }
     footer section .contacto {
       display: flex;
       flex-direction: column;
@@ -359,12 +380,12 @@ footer {
         align-items: center; }
       footer section .contacto .contactos2 {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         margin-left: 20px; }
       footer section .contacto p,
-      footer section .contacto h4 {
+      footer section .contacto h3 {
         color: white; }
 
 .copyright {
@@ -381,9 +402,9 @@ footer {
 
 .clases {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   text-decoration: none;
   color: white;
   font-size: 20px; }
@@ -391,20 +412,18 @@ footer {
     color: white;
     font-size: 25px;
     font-weight: 700;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     list-style: none;
     margin: 20px; }
   .clases ol {
     background: linear-gradient(90deg, #050505 0%, #7d7d7d 51%, black 100%);
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: white;
     font-size: 20px;
     font-weight: 400; }
@@ -428,9 +447,9 @@ footer {
   border: 5px solid #5c5c5c;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center; }
   .contactoform label {
     color: white;
@@ -468,18 +487,15 @@ footer {
 
 .gana {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 80px;
   margin-bottom: 50px; }
   .gana a {
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 20px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 20px; }
+    padding: 20px 5px 20px 5px; }
   .gana a:hover {
     border-bottom: 3px solid #666;
     border-top: 3px solid #666;
@@ -559,6 +575,9 @@ footer {
       width: 100%; } }
 
 @media only screen and (max-width: 768px) {
+  .videoguia iframe {
+    width: 90%;
+    height: 300px; }
   header {
     grid-template-columns: 100%;
     justify-content: center; }
@@ -580,6 +599,7 @@ footer {
       margin: 0px;
       margin-bottom: 20px; }
       header nav a {
+        padding-left: 0px;
         padding-right: 0px;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -632,10 +652,10 @@ footer {
     margin-bottom: 0; }
     footer section {
       display: flex;
-      flex-direction: column;
-      width: 100%;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column;
+      width: 100%; }
       footer section .visitanos {
         display: flex;
         flex-direction: column;
@@ -645,9 +665,9 @@ footer {
           color: white; }
         footer section .visitanos div {
           display: flex;
-          flex-direction: row;
+          justify-content: center;
           align-items: center;
-          justify-content: center; }
+          flex-direction: row; }
           footer section .visitanos div img {
             padding: 8%; }
       footer section .contacto {
@@ -661,16 +681,16 @@ footer {
           color: white; }
         footer section .contacto .contactos3 {
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
           margin-left: 4%;
           margin-right: 4%; }
         footer section .contacto .contactos2 {
           display: flex;
-          flex-direction: column;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
           margin-left: 4%;
           margin-right: 4%; }
   .copyright {
@@ -686,9 +706,9 @@ footer {
       text-align: center; }
   .clases {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -729,9 +749,9 @@ footer {
     border: 5px solid #5c5c5c;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center; }
     .contactoform label {
       color: white;
@@ -774,10 +794,10 @@ footer {
         height: 320px; }
   .gana {
     display: flex;
-    margin-top: 0px;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
     margin-top: 30px;
     margin-bottom: 30px; }
     .gana img {
@@ -788,9 +808,9 @@ footer {
       margin-top: 40px; }
     .gana div {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
     .gana h2 {
       display: flex;
       justify-content: center;

@@ -1,6 +1,6 @@
 var iconMenu = document.querySelector('.menu-burguer');
 var desplegar = document.getElementById('desplegar');
-iconMenu.addEventListener('click', function() {
+iconMenu.addEventListener('click', function () {
   if (iconMenu.classList.contains('open')) {
     iconMenu.classList.remove('open');
     desplegar.classList.remove('desplegar');
